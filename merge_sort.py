@@ -1,4 +1,5 @@
-
+import time
+start = time.time()
 def merge_sort(vet):
     if len(vet) > 1:
         left_vet = vet[:len(vet)//2]
@@ -37,5 +38,7 @@ print(vet)
 merge_sort(vet)
 print("dopo l'ordinamento:")
 print(vet)
+end = time.time()
+print(f"tempo impiegato: {end - start:.6f} secondi")
 
 
